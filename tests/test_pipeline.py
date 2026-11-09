@@ -55,3 +55,14 @@ def test_gini_toy():
 def test_gini_known_value():
     # [1,2,3]: sum_i (2i-n-1) x_i / (n sum) = (-2*1+0+2*3)/(3*6) = 4/18
     assert gini([3, 1, 2]) == pytest.approx(4 / 18)
+
+
+def test_opponent_strength_joined():
+    import pandas as pd
+    from barca import io
+    m = pd.read_parquet(io.PROCESSED / "matches.parquet")
+    assert m.opp_position.between(1, 20).all() and m.opp_position.ne(None).all()
+    # Barcelona never plays itself; Real Madrid finished 1st or 2nd in all 7 seasons
+    rm = m[m.opponent == "Real Madrid"]
+    assert len(rm) > 0 and rm.opp_position.isin([1, 2]).all()
+    assert m.stratum.nunique() == 6

@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from barca import io, parse, networks  # noqa: E402
+from barca import context, io, networks, parse  # noqa: E402
 
 
 def main():
@@ -18,6 +18,7 @@ def main():
     d = parse.assemble(results)
     d["matches"] = parse.parse_matches()
     assert set(d["matches"].match_id) == set(ids), "match metadata / id list mismatch"
+    d["matches"] = context.add_opponent_strength(d["matches"])
     io.PROCESSED.mkdir(parents=True, exist_ok=True)
 
     P, XI, AP, T = d["passes"], d["starting_xi"], d["appearances"], d["touches"]
