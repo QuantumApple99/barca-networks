@@ -1,0 +1,15 @@
+criterion,value,threshold,result
+run,main (25 features),,
+n_pca_components,4,,
+chosen_k,6,3 <= k <= 6,PASS
+silhouette,0.3964580033071836,>= 0.25,PASS
+stability_median_ARI,0.8390566487230819,>= 0.7,PASS
+stability_p05_ARI,0.6740148833716731,,
+stability_p95_ARI,0.932118709285839,,
+bootstrap_n_boot,200,,
+bootstrap_n_init,50,,
+ARI_vs_positions,0.44974765199371636,> 0.3,PASS
+n_split_position_groups,3,>= 1,PASS
+split_groups,"CM, FB, W",,
+era_mix_TV,0.19179690916378844,,
+era_mix_p,0.02857142857142857,descriptive (min 1/35),

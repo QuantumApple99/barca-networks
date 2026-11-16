@@ -1,4 +1,4 @@
-"""Run the full pipeline: stage 1 raw -> processed, stage 2 metrics, stage 3 O1 results and figures."""
+"""Run the full pipeline: stage 1 raw -> processed, stage 2 metrics, stage 3 O1 results and figures, stage 4 O2 roles."""
 import runpy
 import sys
 from pathlib import Path
@@ -12,6 +12,7 @@ def main():
     from barca import metrics
     metrics.run_stage2()
     runpy.run_path(str(ROOT / "notebooks" / "02_O1_style.py"), run_name="__main__")
+    runpy.run_path(str(ROOT / "notebooks" / "03_O2_roles.py"), run_name="__main__")
 
 
 if __name__ == "__main__":
