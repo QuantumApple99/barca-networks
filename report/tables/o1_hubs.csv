@@ -1,0 +1,13 @@
+era,player,starts,pagerank,betweenness,top_pagerank,top_betweenness,pct_matches_top_pagerank,pct_matches_top_betweenness
+Guardiola,Xavier Hernández Creus,109,0.15,0.297,85,63,62.5,46.324
+Guardiola,Thiago Alcântara do Nascimento,24,0.127,0.199,6,7,4.412,5.147
+Guardiola,Andrés Iniesta Luján,88,0.12,0.137,15,11,11.029,8.088
+Guardiola,Francesc Fàbregas i Soler,22,0.118,0.076,3,3,2.206,2.206
+Guardiola,Daniel Alves da Silva,109,0.112,0.115,10,10,7.353,7.353
+Guardiola,Gnégnéri Yaya Touré,35,0.109,0.134,5,8,3.676,5.882
+Luis Enrique,Xavier Hernández Creus,19,0.117,0.139,5,4,4.545,3.636
+Luis Enrique,Andrés Iniesta Luján,57,0.117,0.135,20,11,18.182,10.0
+Luis Enrique,Lionel Andrés Messi Cuccittini,100,0.113,0.085,19,3,17.273,2.727
+Luis Enrique,Daniel Alves da Silva,53,0.108,0.152,10,7,9.091,6.364
+Luis Enrique,Jordi Alba Ramos,75,0.105,0.177,7,18,6.364,16.364
+Luis Enrique,Neymar da Silva Santos Junior,89,0.104,0.069,11,1,10.0,0.909
