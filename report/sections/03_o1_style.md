@@ -49,8 +49,8 @@ The two smallest p-values sit at the permutation floor of 1/10,001: not one of t
 - The change comes from Barcelona itself, not the opponents. Barcelona's own PageRank Gini fell from 0.209 to 0.174, and its betweenness centralization from 0.279 to 0.213. Opponents stayed flat: 0.225 → 0.225 and 0.218 → 0.234.
 
 **Two predicted shifts appear on average but not season by season.** Under Luis Enrique, a smaller share of Barcelona's passing triangles was central (M3), and more passes reached the forward line (M4), both as predicted. But neither holds in every season:
-- 2014/15, Luis Enrique's first and treble-winning season, still looks like a Guardiola side on M3.
-- On M4, Guardiola's first season (2008/09) and Luis Enrique's last (2016/17) each sit on the "wrong" side of the midpoint.
+- 2014/15, Luis Enrique's first and treble-winning season, still looks like a Guardiola side on both M3 (0.116, above the 0.080 midpoint) and M4 (−0.054, below the −0.040 midpoint).
+- On the Guardiola side, 2009/10 already falls on the Luis Enrique side of the midpoint for M3 (0.053), as does 2008/09 for M4 (+0.002).
 
 The eras overlap, and the change looks gradual rather than a clean break at the coaching change. Under our rule this means the shift isn't consistent enough to count as support.
 
