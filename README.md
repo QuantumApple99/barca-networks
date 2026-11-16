@@ -14,7 +14,7 @@ Do Barcelona's two treble-winning sides, Guardiola (2008/09–2011/12) and Luis 
 
 ## Reproduce
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt    # Python ≥ 3.12 (author: /opt/anaconda3/bin/python3, 3.13)
 ./scripts/download.sh          # ~800 MB of StatsBomb JSON into data/raw/ (not committed)
 python run_all.py              # raw → processed parquet → results and figures
 pytest                         # tests
